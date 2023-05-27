@@ -5,44 +5,42 @@
 //  "O": "15",
 // "U": "21",
 // "Y": "25",
-//Дан массив целых чисел требуеться заменить числа на 
-//гласные буквы соответствующие алфавиту
-let = num[1, 5, 9, 15, 21, 25, 10, 8, 26];
 
-giv();
+let num = [1, 5, 9, 15, 21, 25, 10, 8, 26];
 
-function swap() { // заменяет номер согласной буквы на согласную букву
-    for (let i = 0; i < num; i++) {
-        if (num[i] == 1) {
 
-        }
 
-        else if (num[i] == 5) {
+for (let i = 0; i < num.length; i++)
+{
 
-        }
-
-        else if (num[i] == 9) {
-
-        }
-        else if (num[i] == 15) {
-
-        }
-
-        else if (num[i] == 21) {
-
-        }
-
-        else if (num[i] == 25) {
-
-        }
-    }
+if(num[i] == 1){
+num[i] = 'А';
 }
 
-
-function giv(num) { //выводит массив
-
-    for (let v = 0; v < num; v++) {
-        console.log(num[v]);
+else if(num[i] == 5){
+    num[i] = 'Е';
     }
 
+    else if(num[i] == 9){
+        num[i] = 'I';
+        }
+    
+        else if(num[i] == 15){
+            num[i] = 'О';
+            }
+
+            else if(num[i] == 21){
+                num[i] = 'U';
+                }
+
+                else if(num[i] == 25){
+                    num[i] = 'Y';
+                    }
+                              
 }
+console.log(num);
+
+
+
+
+
