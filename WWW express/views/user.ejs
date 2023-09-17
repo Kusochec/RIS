@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express страница </title>
+</head>
+<body>
+    <h1>Страница пользователя: <%= username %> </h1>
+<!-- <%= username %> выводить данные ползователя на страницу
+    которые мы получили из "res.render('user', {username: req.params.username})" -->
+ <% if (username.toLowerCase() == 'oleg') { %> <!-- эта строка позволяет писать код JS
+ .toLowerCase()-(В нижнем регистре) переводит имя ползователя в нижний регистор а после сверяет-->
+<ul>
+    <% hobbis.forEach((el) => { %> <!--forEach "я всех" - из массива "hobbis." получаем элементы этого массива
+    а после обозвав их el выводим в ввиде спика -->
+<li><%= el %> </li>
+    <% }) %>   
+</ul>
+ <% } %>
+</body>
+</html>
