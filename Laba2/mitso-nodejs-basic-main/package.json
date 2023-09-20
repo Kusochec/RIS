@@ -1,8 +1,8 @@
 {
-  "name": "mitso-nodejs-basics",
-  "version": "1.0.0",
+  "name": "mitso-nodejs-basic-main",
+  "version": "0.0.1",
   "description": "",
-  
+  "main": "index.js",
   "scripts": {
     "cli:args": "node src/cli/args.js --some-arg value1 --other 1337 --arg2 42",
     "cli:env": "npx cross-env SOME=any MITSO_foo=bar MITSO_bar=baz node src/cli/env.js",
