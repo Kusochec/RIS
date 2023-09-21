@@ -1,5 +1,6 @@
-const list = async () => {
-    // Write your code here 
-};
+const fs = require('fs');
 
-await list();
+fs.readdir(__dirname +'/files',(err,data) => {
+    err ? console.log(`FS operation failed: ${err}`):null;
+    console.log(data);
+ })  

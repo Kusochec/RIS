@@ -1,6 +1,6 @@
 const parseEnv = () => {
     const envVariableArray = process.env;
-    //console.log(envVariableArray);
+    // console.log(envVariableArray);
     let filtered = {}
 
     for (let key in envVariableArray) {
@@ -13,4 +13,3 @@ const parseEnv = () => {
 };
 
 parseEnv();
-

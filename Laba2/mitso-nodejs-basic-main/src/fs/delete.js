@@ -1,5 +1,9 @@
-const remove = async () => {
-    // Write your code here 
-};
+const fs = require('fs');
 
-await remove();
+    fs.unlink(__dirname +'/files/fileToRemove.txt', (err) => {
+        if (err) {
+          console.error('FS operation failed:', err);
+          return;
+        }  
+    });
+

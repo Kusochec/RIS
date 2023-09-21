@@ -1,18 +1,9 @@
 const fs = require('fs');
-const path = require('path');
 
-function Create() {
-  const filePath = path.join(__dirname, 'files', 'fresh.txt');
-  const fileContent = 'I am fresh and young';
-
-  fs.writeFile(filePath, fileContent, (err) => {
-    if (err) {
-      console.error('Error: FS operation failed');
-      return;
-    }
-
+  fs.writeFile(__dirname +'/files/fresh.txt', 'I am fresh and young', (err ) => {
+    err ? console.error(`FS operation failed: ${err}`):null;
+    
     console.log('File created successfully');
   });
-}
 
-Create();
+
